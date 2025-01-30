@@ -7,18 +7,24 @@ import Login from './Login';
 import Home from './Home';
 import PatternPrinting from './PatternPrinting';
 import ArrayMethods from './ArrayMethods';
+import SortingScreen from './SortingScreen';
+import Matrix from './Matrix';
 
 const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="ArrayMethods">
+      <Stack.Navigator initialRouteName="Matrix">
         <Stack.Screen name="Register" component={Register} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name='PatternPrinting' component={PatternPrinting}/>
         <Stack.Screen name='ArrayMethods' component={ArrayMethods}/>
+        <Stack.Screen name='SortingScreen' component={SortingScreen}/>
+        <Stack.Screen name='Matrix' component={Matrix}/>
+        
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
